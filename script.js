@@ -1,23 +1,22 @@
 const messages = [
-    "Are you sure you don't love me?",
-    "Please reconsider, will you be my valentine?",
-    "Come on, give it a chance!",
-    "You know you want to say yes!",
-    "I'll keep asking until you say yes!"
+    "Are you sure you don't want to be my Valentine?",
+    "Please reconsider, you make my heart skip a beat!",
+    "You are the sunshine in my life, say yes!",
+    "My heart longs for you, don't say no!",
+    "You are my everything, be my Valentine!"
 ];
 
-let messageIndex = 0;
+const messageElement = document.getElementById('message');
+const yesButton = document.getElementById('yesButton');
+const noButton = document.getElementById('noButton');
 
-document.getElementById('noBtn').addEventListener('click', () => {
-    if (messageIndex < messages.length) {
-        document.getElementById('message').innerText = messages[messageIndex];
-        messageIndex++;
-    } else {
-        messageIndex = 0;
-        document.getElementById('message').innerText = messages[messageIndex];
-    }
+yesButton.addEventListener('click', () => {
+    messageElement.textContent = "Yay! You've made my day! 💖";
+    noButton.style.display = 'none';
+    yesButton.style.display = 'none';
 });
 
-document.getElementById('yesBtn').addEventListener('click', () => {
-    document.getElementById('message').innerText = "Yay! I love you too!";
+noButton.addEventListener('click', () => {
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    messageElement.textContent = randomMessage;
 });
