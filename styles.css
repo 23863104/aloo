@@ -1,115 +1,36 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-image: url('image.gpg'); /* Background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background image */
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #fff;
-    padding: 20px;
-}
-
-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+    background-color: #f2f2f2;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-main {
-    padding: 20px;
-}
-
-.banner {
+.container {
     text-align: center;
-    padding: 50px 0;
-    color: #fff;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.banner h2 {
-    margin-bottom: 20px;
+button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+#yesBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
 }
 
-.destinations {
-    margin-top: 50px;
-}
-
-.destination {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.destination img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.destination h3 {
-    margin-top: 10px;
-}
-
-.about, .contact {
-    margin: 50px 0;
-}
-
-.contact form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.contact form label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.contact form button {
-    display: block;
-    width: 100%;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+#noBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
 }
